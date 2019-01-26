@@ -1,0 +1,107 @@
+.select-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.select-control {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px 5px 0px 0px;
+  padding: 0px 5px 5px 5px;
+  display: flex;
+  flex-direction: row;
+}
+.select-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+.select-input__input-field {
+  min-width: 20%;
+  min-height: 20px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border: none;
+}
+.select-input__input-field:hover {
+  cursor: default;
+}
+.select-input__input-field:focus {
+  outline: none;
+}
+.select-input__input-field::selection {
+  background-color:rgb(0, 119, 255, 0.2);
+}
+.select-input__clear-icon {
+  margin-left: 5px;
+  display: block;
+  cursor: pointer;
+}
+.select-control__clear-icon {
+  padding-top: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.select-variants-wrapper {
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+}
+.select-variants {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  overflow: auto;
+  position: absolute;
+}
+.select-variants__element {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.select-variants__element_empty {
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  color: rgb(117, 117, 117);
+  display: flex;
+  align-items: center;
+}
+.select-input-wrapper__selected-element {
+  min-height: 20px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 0px 5px 0px 5px; 
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 2px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.select-input-wrapper__selected-element-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
